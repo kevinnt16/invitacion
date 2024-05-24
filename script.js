@@ -9,16 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     noBtn.addEventListener('mouseover', () => {
-        const offsetX = Math.random() * (buttonsDiv.clientWidth - noBtn.offsetWidth);
-        const offsetY = Math.random() * (buttonsDiv.clientHeight - noBtn.offsetHeight);
-        noBtn.style.left = `${offsetX}px`;
-        noBtn.style.top = `${offsetY}px`;
+        moveButton(noBtn, buttonsDiv);
     });
 
     noBtn.addEventListener('touchstart', () => {
-        const offsetX = Math.random() * (buttonsDiv.clientWidth - noBtn.offsetWidth);
-        const offsetY = Math.random() * (buttonsDiv.clientHeight - noBtn.offsetHeight);
-        noBtn.style.left = `${offsetX}px`;
-        noBtn.style.top = `${offsetY}px`;
+        moveButton(noBtn, buttonsDiv);
     });
+
+    function moveButton(button, container) {
+        const offsetX = Math.random() * (container.clientWidth - button.offsetWidth);
+        const offsetY = Math.random() * (container.clientHeight - button.offsetHeight);
+        button.style.left = `${offsetX}px`;
+        button.style.top = `${offsetY}px`;
+    }
 });

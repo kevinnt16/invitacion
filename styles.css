@@ -9,8 +9,6 @@ body {
     margin: 0;
     padding: 0 10px;
     box-sizing: border-box;
-    background-image: url('images/heart-background.png'); /* Asegúrate de que el nombre del archivo coincida */
-    background-repeat: repeat;
 }
 
 .container {
@@ -35,11 +33,11 @@ p {
 }
 
 .buttons {
+    position: relative; /* Necesario para posicionar el botón "No" de forma absoluta */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px; /* Añadimos espacio entre los botones */
-    position: relative; /* Necesario para posicionar el botón "No" de forma absoluta */
+    gap: 10px; /* Añadimos espacio entre los botones */
 }
 
 button {
