@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageDiv = document.getElementById('message');
 
     yesBtn.addEventListener('click', () => {
-        messageDiv.textContent = '¡Genial! La palabra clave es: SALCHIPAPA';
+        messageDiv.textContent = '¡Genial! ¡¡Te amoo!! La palabra clave es: MONITO27';
     });
 
     noBtn.addEventListener('mouseover', () => {
