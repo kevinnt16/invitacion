@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0 10px;
     box-sizing: border-box;
-    background-image: url('images/heart-background.png'); /* Asegúrate de que el nombre del archivo coincida */
+    background-image: url('images/pattern.svg');
     background-repeat: repeat;
 }
 
@@ -35,6 +35,7 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 button {
