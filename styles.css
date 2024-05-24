@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0 10px;
     box-sizing: border-box;
-    background-image: url('images/pattern.svg');
+    background-image: url('images/heart-background.png'); /* Asegúrate de que el nombre del archivo coincida */
     background-repeat: repeat;
 }
 
@@ -17,6 +17,9 @@ body {
     text-align: center;
     max-width: 600px;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 h1 {
@@ -35,7 +38,8 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 50px; /* Añadimos espacio entre los botones */
+    position: relative; /* Necesario para posicionar el botón "No" de forma absoluta */
 }
 
 button {
@@ -54,6 +58,10 @@ button {
 
 button:hover {
     background-color: #ff6699;
+}
+
+#noBtn {
+    position: absolute; /* Permitir que el botón "No" se mueva independientemente */
 }
 
 #message {
