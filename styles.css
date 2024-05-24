@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0 10px;
     box-sizing: border-box;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24' fill='none' stroke='%23ff3366' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-heart'%3E%3Cpath d='M20.8 4.6a5.8 5.8 0 0 0-8.2 0L12 5.2l-.6-.6a5.8 5.8 0 0 0-8.2 8.2l8.2 8.2 8.2-8.2a5.8 5.8 0 0 0 0-8.2z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url('images/heart-background.png'); /* Asegúrate de que el nombre del archivo coincida */
     background-repeat: repeat;
 }
 
