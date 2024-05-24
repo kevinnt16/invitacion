@@ -33,11 +33,11 @@ p {
 }
 
 .buttons {
-    position: relative; /* Necesario para posicionar el botón "No" de forma absoluta */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px; /* Añadimos espacio entre los botones */
+    gap: 20px; /* Aumentamos el espacio entre los botones */
+    position: relative;
 }
 
 button {
@@ -49,7 +49,6 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -60,6 +59,9 @@ button:hover {
 
 #noBtn {
     position: absolute; /* Permitir que el botón "No" se mueva independientemente */
+    left: 50%; /* Inicialmente centrado */
+    top: 50%; /* Inicialmente centrado */
+    transform: translate(-50%, -50%); /* Ajustar el centro */
 }
 
 #message {
